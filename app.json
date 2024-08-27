@@ -1,23 +1,23 @@
 {
   "expo": {
-    "name": "td-class",
-    "slug": "td-class",
+    "name": "tdah-class",
+    "slug": "tdah-class",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/splash.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/images/logo-splash.jpeg",
+      "resizeMode": "resize",
+      "backgroundColor": "#4157ff"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo-splash.jpeg",
         "backgroundColor": "#ffffff"
       }
     },
