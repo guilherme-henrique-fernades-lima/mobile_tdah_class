@@ -77,8 +77,9 @@ export default function Test() {
                 <View style={styles.containerQuestion}>
                     <Text style={styles.headerTitle}>Questionário</Text>
                     <View style={styles.containerTitleQuestion}>
+                        <Text style={styles.indexText}>{currentQuestion + 1}.</Text>
                         <Text style={styles.questionTitle}>
-                            <Text style={styles.indexText}>{currentQuestion + 1}.{" "}</Text> {QUESTIONS[currentQuestion].question}
+                            {QUESTIONS[currentQuestion].question}
                         </Text>
                     </View>
 
@@ -146,13 +147,15 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     containerTitleQuestion: {
+        flexDirection: 'row',
         width: '100%',
         height: 100,
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
     },
     indexText: {
-        marginRight: 10
+        marginRight: 5,
+        fontWeight: 'bold'
     },
     radioButtonGroup: {
         marginHorizontal: 20,

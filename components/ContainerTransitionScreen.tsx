@@ -15,7 +15,7 @@ export const ContainerTransitionScreen: React.FC<ContainerProps> = ({ children }
             style={styles.background}
             resizeMode="cover"
         >
-            <StatusBar style="light" backgroundColor={COLORS.brand} />
+            <StatusBar style="light" backgroundColor={COLORS.brand} animated />
 
             {/* Use um View centralizado para o conteúdo */}
             <View style={styles.container}>

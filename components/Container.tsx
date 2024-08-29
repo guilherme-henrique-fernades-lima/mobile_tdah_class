@@ -39,7 +39,7 @@ export const Container: React.FC<ContainerProps> = ({ header = true, boxContent,
 
     return (
         <View style={styles.container}>
-            <StatusBar style="dark" backgroundColor="#f0f0f0" translucent />
+            <StatusBar style="dark" backgroundColor="#f0f0f0" translucent animated />
             <View style={styles.header}>
 
                 {!onlyBrand &&
