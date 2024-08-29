@@ -1,7 +1,9 @@
-import { View, Text, StyleSheet, Image } from "react-native";
-import { Link } from 'expo-router';
-
+import { View, Text, StyleSheet, Alert } from "react-native";
+import { useEffect } from "react";
+import { useRouter, useNavigation } from 'expo-router';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 //Tokens
 import COLORS from "@/src/styles/tokens";
 
@@ -22,6 +24,40 @@ interface Content {
 }
 
 export const ResultDiagnostic: React.FC<ResultProps> = ({ type = "success" }) => {
+
+    const router = useRouter();
+    const navigation = useNavigation();
+
+    useEffect(() => {
+        navigation.addListener('beforeRemove', (e) => {
+            e.preventDefault();
+            //Comentar para evitar a volta pelo botão de votar físico do dispositivo
+            //navigation.dispatch(e.data.action);
+        });
+    }, []);
+
+    const removeAsyncStorage = async () => {
+        await AsyncStorage.removeItem('answers');
+        router.push("/start")
+    }
+
+    const handlePress = () => {
+        Alert.alert(
+            "Voltar para o início?",
+            "O questionário será reiniciado",
+            [
+                {
+                    text: "Cancelar",
+                    onPress: () => { },
+                    style: "cancel"
+                },
+                {
+                    text: "Sim",
+                    onPress: removeAsyncStorage
+                }
+            ]
+        );
+    };
 
     // Define the content based on the type prop
     const content: Record<'danger' | 'warning' | 'success', Content> = {
@@ -54,11 +90,10 @@ export const ResultDiagnostic: React.FC<ResultProps> = ({ type = "success" }) =>
                 <FontAwesome5 name="clipboard-list" size={80} color={titleColor} />
             </View>
 
-
             <Text style={[styles.title, { color: titleColor }]}>{title}</Text>
             <Text style={styles.bodyText}>{bodyText}</Text>
 
-            <Button title="Início" type={buttonType} />
+            <Button title="Início" type={buttonType} onPress={handlePress} />
         </View>
     );
 };

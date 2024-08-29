@@ -1,22 +1,16 @@
 import React from 'react';
-import { View, StyleSheet, Text, Image, ImageBackground } from 'react-native';
-
-import { Button } from "@/components/Button";
-
+import { View, StyleSheet, Text, Image, ActivityIndicator } from 'react-native';
 import { ContainerTransitionScreen } from '@/components/ContainerTransitionScreen';
 
-export default function Loading() {
+export function LoadingTransitionPage() {
     return (
         <ContainerTransitionScreen>
-
-            <Image source={require('../../assets/images/logo-texto-branco.png')} style={styles.image} resizeMode="contain" />
-
-            <View style={styles.wrapperImgTitle}>
-                <Image source={require('../../assets/images/message-img.png')} style={styles.imageCenter} resizeMode="contain" />
-                <Text style={styles.title}>Vamos iniciar o{"\n"}questionário?</Text>
+            <Image source={require('../assets/images/logo-texto-branco.png')} style={styles.image} resizeMode="contain" />
+            <View>
+                <ActivityIndicator size={70} color="#1FB1FF" />
+                <Text style={styles.text}>Carregando suas{"\n"}respostas</Text>
             </View>
-            <Button title="Iniciar" />
-
+            <View />
         </ContainerTransitionScreen>
     );
 }
@@ -34,11 +28,11 @@ const styles = StyleSheet.create({
         height: 40
     },
     imageCenter: {
-        width: 200,
-        height: 200
+        width: 160,
+        height: 160
     },
     title: {
-        fontSize: 40,
+        fontSize: 32,
         color: '#fff',
         fontWeight: 'bold',
         textAlign: 'center'
@@ -47,6 +41,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%'
+    },
+    text: {
+        color: '#fff',
+        fontWeight: 'bold',
+        textAlign: 'center',
+        fontSize: 18,
+        marginTop: 30
     }
 })
 

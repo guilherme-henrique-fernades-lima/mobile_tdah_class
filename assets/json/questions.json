@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "type": "Desatenção",
+    "question": "O aluno frequentemente comete erros por descuido em atividades escolares ou outras atividades?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Desatenção",
+    "question": "O aluno tem dificuldade em manter a atenção em tarefas ou atividades recreativas?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Desatenção",
+    "question": "O aluno parece não ouvir quando se fala diretamente com ele(a)?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "Desatenção",
+    "question": "O aluno não segue instruções e não termina tarefas escolares, não sendo por comportamento de oposição?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "Desatenção",
+    "question": "O aluno tem dificuldade em organizar tarefas e atividades?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "Desatenção",
+    "question": "O aluno evita, não gosta ou reluta em se envolver em tarefas que exijam esforço mental constante?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "Desatenção",
+    "question": "O aluno perde coisas necessárias para as tarefas ou atividades (por exemplo, brinquedos, tarefas escolares, lápis, livros ou ferramentas)?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "Desatenção",
+    "question": "O aluno se distrai facilmente com estímulos externos?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "Desatenção",
+    "question": "O aluno é esquecido em atividades diárias?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "Hiperatividade",
+    "question": "O aluno agita as mãos ou os pés ou se remexe na cadeira?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "Hiperatividade",
+    "question": "O aluno levanta-se na sala de aula ou em outras situações nas quais se espera que permaneça sentado?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "Hiperatividade",
+    "question": "O aluno corre ou escala em demasia em situações em que isto é inapropriado?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "Hiperatividade",
+    "question": "O aluno tem dificuldade em brincar ou se envolver silenciosamente em atividades de lazer?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "Hiperatividade",
+    "question": "O aluno está frequentemente 'a mil por hora' ou 'a todo vapor'?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "Hiperatividade",
+    "question": "O aluno fala em demasia?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "Hiperatividade",
+    "question": "O aluno responde de forma precipitada antes de as perguntas terem sido completadas?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "Hiperatividade",
+    "question": "O aluno tem dificuldade de esperar a sua vez?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "Hiperatividade",
+    "question": "O aluno interrompe os outros ou se intromete (por exemplo, mete-se em conversas ou brincadeiras)?",
+    "options": [
+      { "label": "Nunca", "value": "nunca", "score": 0 },
+      { "label": "Às vezes", "value": "as_vezes", "score": 1 },
+      { "label": "Frequentemente", "value": "frequentemente", "score": 2 },
+      { "label": "Muito frequentemente", "value": "muito_frequentemente", "score": 3 }
+    ]
+  }
+]

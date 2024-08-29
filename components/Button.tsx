@@ -6,12 +6,21 @@ import COLORS from "@/src/styles/tokens";
 interface ButtonProps {
     title: string;
     type?: 'primary' | 'warning' | 'danger' | 'success';
-    size?: 'normal' | 'small'
+    size?: 'normal' | 'small',
+    disabled?: boolean;
+    onPress?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ title, type = 'primary', size = 'normal' }) => {
+export const Button: React.FC<ButtonProps> = ({
+    title,
+    type = 'primary',
+    size = 'normal',
+    disabled = false,
+    onPress
+}) => {
 
     const getBackgroundColor = () => {
+
         switch (type) {
             case 'warning':
                 return COLORS.warning;
@@ -26,14 +35,17 @@ export const Button: React.FC<ButtonProps> = ({ title, type = 'primary', size = 
 
     return (
         <TouchableOpacity
+            disabled={disabled}
             style={[
                 styles.button,
                 size == 'small' && styles.buttonSmall,
                 { backgroundColor: getBackgroundColor() },
+                disabled && styles.buttonDisabled
             ]}
             activeOpacity={0.8}
+            onPress={onPress}
         >
-            <Text style={styles.text}>{title}</Text>
+            <Text style={[styles.text, disabled && styles.textDisabled]}>{title}</Text>
         </TouchableOpacity>
     );
 };
@@ -68,5 +80,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 18,
         fontWeight: "bold"
+    },
+    textDisabled: {
+        color: '#a9a9a9',
+    },
+    buttonDisabled: {
+        backgroundColor: COLORS.disabled,
     },
 });

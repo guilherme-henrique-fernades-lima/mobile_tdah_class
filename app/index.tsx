@@ -7,11 +7,22 @@ import { Link } from 'expo-router';
 
 
 export default function Index() {
+
+
     return (
         <Container header boxContent>
 
-            <Text style={styles.titleQuestion}>Questionário</Text>
+            <Link href="/test">
+                <Text style={styles.link}>teste</Text>
+            </Link>
 
+            <Link href="/instructions">
+                <Text style={styles.link}>instruções</Text>
+            </Link>
+
+            <Link href="/loading">
+                <Text style={styles.link}>loading</Text>
+            </Link>
 
             <Link href="/diagnostic">
                 <Text style={styles.link}>resultado</Text>
@@ -25,30 +36,14 @@ export default function Index() {
                 <Text style={styles.link}>Start</Text>
             </Link>
 
-            <Button title='Continuar' />
-            <View style={styles.buttonActions}>
-                <Button title='Voltar' size='small' />
-                <Button title='Próximo' size='small' />
-            </View>
         </Container>
     );
 }
 
 const styles = StyleSheet.create({
-    buttonActions: {
-        flexDirection: 'row',
-        width: '100%',
-        marginVertical: 20,
-        justifyContent: "space-between"
-    },
-    titleQuestion: {
-        fontSize: 24,
-        color: '#0088F2',
-        fontWeight: 'bold',
-        marginBottom: 30
-    },
+
     link: {
-        marginVertical: 50
+        marginVertical: 70
     }
 })
 

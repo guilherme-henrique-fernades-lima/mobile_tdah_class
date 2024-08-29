@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, StyleSheet, Text, ScrollView } from 'react-native';
+import { useRouter, useNavigation } from 'expo-router';
 
 import COLORS from "@/src/styles/tokens";
 
@@ -7,8 +8,25 @@ import { Button } from "@/components/Button";
 import { Container } from '@/components/Container';
 
 export default function Terms() {
+
+    const router = useRouter();
+    const navigation = useNavigation();
+
+    useEffect(() => {
+        navigation.addListener('beforeRemove', (e) => {
+            e.preventDefault();
+
+            //Comentar para evitar a volta pelo botão de votar físico do dispositivo
+            //navigation.dispatch(e.data.action);
+        });
+    }, []);
+
+    const goToScreen = () => {
+        router.push("/instructions")
+    };
+
     return (
-        <Container header boxContent>
+        <Container header boxContent onlyBrand>
             <Text style={styles.title}>Termo de Uso e Condições</Text>
 
             <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -34,7 +52,7 @@ export default function Terms() {
 
             <View style={{ marginBottom: 40 }} />
 
-            <Button title="Aceitar e Continuar" />
+            <Button title="Aceitar e Continuar" onPress={goToScreen} />
         </Container>
     );
 }
