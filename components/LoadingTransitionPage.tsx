@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 32,
         color: '#fff',
-        fontWeight: 'bold',
+        fontFamily: 'bold',
         textAlign: 'center'
     },
     wrapperImgTitle: {
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#fff',
-        fontWeight: 'bold',
+        fontFamily: 'bold',
         textAlign: 'center',
         fontSize: 18,
         marginTop: 30

@@ -107,14 +107,15 @@ const styles = StyleSheet.create({
     title: {
         textAlign: "center",
         fontSize: 24,
-        fontWeight: "bold",
         marginBottom: 10,
+        fontFamily: 'bold'
     },
     bodyText: {
         textAlign: "center",
         color: COLORS.secondary,
         marginBottom: 20,
-        fontSize: 14
+        fontSize: 14,
+        fontFamily: 'regular'
     },
     icon: {
         alignItems: 'center',

@@ -14,8 +14,7 @@ export default function Start() {
     useEffect(() => {
         navigation.addListener('beforeRemove', (e) => {
             e.preventDefault();
-
-            //Comentar para evitar a volta pelo botão de votar físico do dispositivo
+            //Comentar para permitir a volta pelo botão de votar físico do dispositivo
             //navigation.dispatch(e.data.action);
         });
     }, []);
@@ -33,7 +32,7 @@ export default function Start() {
                 <Image source={require('../../assets/images/message-img.png')} style={styles.imageCenter} resizeMode="contain" />
                 <Text style={styles.title}>Vamos iniciar o{"\n"}questionário?</Text>
             </View>
-            <Button title="Iniciar" onPress={goToPage} />
+            <Button title="Iniciar" onPress={goToPage} type="light-blue" />
 
         </ContainerTransitionScreen>
     );
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 32,
         color: '#fff',
-        fontWeight: 'bold',
+        fontFamily: 'bold',
         textAlign: 'center'
     },
     wrapperImgTitle: {

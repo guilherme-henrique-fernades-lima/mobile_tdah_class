@@ -133,8 +133,8 @@ const styles = StyleSheet.create({
     headerTitle: {
         fontSize: 24,
         color: COLORS.primary,
-        fontWeight: 'bold',
         marginBottom: 30,
+        fontFamily: 'bold'
     },
     containerQuestion: {
         alignItems: 'flex-start',
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     questionTitle: {
-        fontWeight: 'bold',
+        fontFamily: 'bold',
         fontSize: 16,
         textAlign: 'left',
     },
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     },
     indexText: {
         marginRight: 5,
-        fontWeight: 'bold'
+        fontFamily: 'bold'
     },
     radioButtonGroup: {
         marginHorizontal: 20,
@@ -185,9 +185,10 @@ const styles = StyleSheet.create({
     radioButtonLabel: {
         fontSize: 16,
         color: '#B7B7B7',
+        fontFamily: 'regular'
     },
     radioButtonLabelSelected: {
         color: COLORS.primary,
-        fontWeight: 'bold'
+        fontFamily: 'bold'
     },
 });

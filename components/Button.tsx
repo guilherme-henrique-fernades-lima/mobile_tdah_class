@@ -5,7 +5,7 @@ import COLORS from "@/src/styles/tokens";
 
 interface ButtonProps {
     title: string;
-    type?: 'primary' | 'warning' | 'danger' | 'success';
+    type?: 'primary' | 'warning' | 'danger' | 'success' | 'light-blue';
     size?: 'normal' | 'small',
     disabled?: boolean;
     onPress?: () => void;
@@ -30,6 +30,8 @@ export const Button: React.FC<ButtonProps> = ({
                 return COLORS.success;
             case 'primary':
                 return COLORS.primary;
+            case 'light-blue':
+                return COLORS.lightBlue;
         }
     };
 
@@ -79,7 +81,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         textAlign: 'center',
         fontSize: 18,
-        fontWeight: "bold"
+        fontFamily: "bold"
     },
     textDisabled: {
         color: '#a9a9a9',

@@ -19,8 +19,7 @@ export default function Instructions() {
     useEffect(() => {
         navigation.addListener('beforeRemove', (e) => {
             e.preventDefault();
-
-            //Comentar para evitar a volta pelo botão de votar físico do dispositivo
+            //Comentar para permitir a volta pelo botão de votar físico do dispositivo
             //navigation.dispatch(e.data.action);
         });
     }, []);
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         color: '#292929',
-        fontWeight: 'bold',
+        fontFamily: 'bold',
         marginBottom: 30,
         textAlign: 'left',
         width: '100%'
@@ -76,7 +75,8 @@ const styles = StyleSheet.create({
         color: COLORS.secondary,
         textAlign: 'left',
         width: '100%',
-        marginVertical: 10
+        marginVertical: 10,
+        fontFamily: 'regular'
     },
     wrapper: {},
 
@@ -99,10 +99,11 @@ const styles = StyleSheet.create({
         color: '#8493AC',
         fontSize: 12,
         textAlign: 'left',
+        fontFamily: 'regular'
     },
     highlightedText: {
         color: COLORS.primary,
-        fontWeight: 'bold'
+        fontFamily: 'bold'
     }
 })
 

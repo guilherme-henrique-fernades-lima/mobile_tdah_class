@@ -1,5 +1,4 @@
 
-
 const COLORS = {
   primary: '#1673FA', 
   warning: '#FAC116',
@@ -7,7 +6,8 @@ const COLORS = {
   success:  '#7AB72D',
   secondary: "#8493AC",
   brand: '#4157ff',
-  disabled: '#d3d3d3'
+  disabled: '#d3d3d3',
+  lightBlue: '#1FB1FF'
 };
 
 export default COLORS;

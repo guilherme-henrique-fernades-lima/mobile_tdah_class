@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     headerBeginText: {
         fontSize: 12,
         marginLeft: 10,
-        fontWeight: 'bold',
+        fontFamily: 'bold',
         color: COLORS.primary
     },
     buttonGoToBegin: {
